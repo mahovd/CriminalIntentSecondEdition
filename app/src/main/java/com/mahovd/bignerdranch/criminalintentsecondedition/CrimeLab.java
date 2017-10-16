@@ -8,7 +8,7 @@ import java.util.UUID;
 
 /**
  * Created by dmitriymakhov on 20/06/2017.
- * Temporary model-class, store and retrieve the crimes list
+ * Temporary model-class, stores and retrieves the crimes list
  */
 
 public class CrimeLab {
@@ -40,6 +40,7 @@ public class CrimeLab {
             Crime crime = new Crime();
             crime.setTitle("Crime # "+i);
             crime.setSolved(i % 2 == 0); //Every other one
+            crime.setRequiresPolicy(i % 2 != 0);
             mCrimes.add(crime);
 
         }
